@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form page</title>
+    <style>
+        body{
+            background: url("background.jpg");
+            background-size: center;
+        }
+        #field{
+            margin: auto;
+            margin-top: 10%;
+            width: 750px;
+        }
+        #field2{
+            margin: auto;
+            margin-top: 5%;
+            width: 750px;
+        }
+        label{
+            color: rgba(74, 77, 33, 0.938);
+        }
+        header{
+            margin-left: 900px;
+            margin-top: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <input type="search" name="insite" id="insite" placeholder="Search in site...">
+    </header>
+    <form action="result.html" >
+        <div id="personal">
+        <fieldset id="field" >
+            <legend>Personal Info</legend>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+            <br><br>
+            <label for="surname">Surname</label>
+            <input type="text" name="surname" id="surname">
+            <br><br>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="gender">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="gender">
+            <label for="gender">Male</label>
+            <br><br>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="">
+            <br><br>
+            <label for="email">Email Adress</label>
+            <input type="email" name="email" id="email" placeholder="example@example.com">
+            <br><br>
+            <label for="birthdate">Date of Birth</label>
+            <input type="date" name="birthdate" id="birthdate">
+            <br><br>
+            <label for="tel">Enter your phone number</label>
+            <input type="tel" name="tel" id="tel" placeholder="(555) 555 5555">
+        </fieldset>
+        <fieldset id="field2">
+            <legend>Interests</legend>
+            <label for="color">Please choose your favourite color</label>
+            <input type="color" name="color" id="color" value="pink">
+            <br><br>
+            <label for="freetime">Can you spend your free time effectively?(between 0 and 10)</label>
+            <input type="range" name="freetime" id="freetime">
+            <br><br>
+            <div>
+                <label for="booktype">Which type of book do you like to read?</label><br>
+                <input type="checkbox" name="booktype" id="dedective">
+                <label for="booktype">Detective and Mystery.</label><br>
+                <input type="checkbox" name="booktype" id="Classics">
+                <label for="booktype">Classics</label><br>
+                <input type="checkbox" name="booktype" id="comic">
+                <label for="booktype">Comic Book</label><br>
+                <input type="checkbox" name="booktype" id="historical">
+                <label for="booktype">Historical Fiction</label><br>
+                <input type="checkbox" name="booktype" id="adventure">
+                <label for="booktype">Action and Adventure</label>
+            </div>
+            <br><br>
+            <label for="travel">Which country would you like to travel?</label>
+            <select name="travel" id="travel">
+                <option value="Philippines">Philippines</option>
+                <option value="Austria">Austria</option>
+                <option value="Greece">Greece</option>
+                <option value="Spain">Spain</option>
+                <option value="SouthAfrica">South Africa</option>
+            </select><br><br>
+            <label for="comment">Is there anything you want to share with us?</label><br>
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Tell us your dream..." ></textarea>
+
+        </fieldset><br>
+        
+    </div>
+
+    </form>
+</body>
+</html>
